@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alauddin-Developer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: rgb(6, 6, 35);
+        color: aliceblue;
+        font-family: "Poppins", sans-serif;
+      }
+      nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 4rem;
+        background-color: rgb(3, 3, 81);
+      }
+      nav ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+      }
+      nav ul li {
+        cursor: pointer;
+        font-size: 0.7rem;
+      }
+      nav ul li:hover {
+        color: rgb(140, 152, 163);
+      }
+      .resumeBtn{
+        padding: 0.4rem 0.8rem; 
+        background-color:rgb(147, 10, 142); 
+        color:beige ; 
+        border: none; 
+        border-radius: 1rem;
+      }
+      button:hover{
+        background-color: rgb(122, 8, 119);
+        cursor: pointer;
+       
+      }
+      .firstSection {
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .leftSection {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      .rightSection {
+        width: 50%;
+      }
+      .rightSection img {
+        width: 80%;
+        padding: 2rem 0 0 6rem;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div style="font-weight: 200; font-size: 2rem" class="left">
+          Alauddin's Portfolio
+        </div>
+        <div class="right" style="font-weight: 200">
+          <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Services</li>
+            <li>Projects</li>
+            <li>Contact Me</li>
+            <li><button   style="   " class="resumeBtn">Resume <i class="fa-solid fa-arrow-down"></i></button></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="firstSection">
+        <div class="leftSection">
+          <p>
+            Hi, I am <br />
+            <span style="font-size: 3rem; color: rgb(207, 224, 218)">
+              Alauddin Almamun.</span
+            >
+            <br />
+            I'm willing to provide services as a  <br> <span style="font-size: 2rem; color: rgb(147, 10, 142)" id="element"></span>
+          </p>
+        </div>
+        <div class="rightSection">
+          <img src="bg.png" alt="" />
+        </div>
+      </section>
+    </main>
+    <!-- Element to contain animated typing -->
+    
+
+    <!-- Load library from the CDN -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Frontend Developer.", "Mern Stack Developer."],
+        typeSpeed: 80,
+        loop: true,
+        backDelay: 2000
+      });
+    </script>
+    <script src="https://kit.fontawesome.com/1b8030fcbe.js" crossorigin="anonymous"></script>
+  </body>
+</html>
